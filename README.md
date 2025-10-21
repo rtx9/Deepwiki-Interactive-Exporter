@@ -18,7 +18,7 @@ Export any public DeepWiki space to clean Markdown with nested folders, preserve
 1. Clone the repository
    ```bash
    git clone https://github.com/rtx9/Deepwiki-Interactive-Exporter.git
-   cd REPO
+   cd Deepwiki-Interactive-Exporter
    ```
 2. Create a virtual environment
    - Windows (PowerShell):
