@@ -17,7 +17,7 @@ Export any public DeepWiki space to clean Markdown with nested folders, preserve
 ## Installation
 1. Clone the repository
    ```bash
-   git clone https://github.com/USERNAME/REPO.git
+   git clone https://github.com/rtx9/Deepwiki-Interactive-Exporter.git
    cd REPO
    ```
 2. Create a virtual environment
@@ -37,7 +37,7 @@ Export any public DeepWiki space to clean Markdown with nested folders, preserve
    ```
 
 ## How to Use
-1. Decide the DeepWiki space URL (e.g., `https://deepwiki.com/teableio/teable`).
+1. Decide the DeepWiki space URL (e.g., `https://deepwiki.com/example/example`).
 2. Choose an output directory (it will be created if missing).
 3. Run one of the following:
    - Interactive mode (prompts for options):
@@ -73,15 +73,15 @@ Export any public DeepWiki space to clean Markdown with nested folders, preserve
   ```
 - Export entire space to `./export` with a polite delay
   ```bash
-  python deepwiki_exporter.py --url https://deepwiki.com/teableio/teable --out ./export --delay 0.25
+  python deepwiki_exporter.py --url https://deepwiki.com/example/example o --out ./export --delay 0.25
   ```
 - Quick sample (limit to 10 pages)
   ```bash
-  python deepwiki_exporter.py --url https://deepwiki.com/teableio/teable --out ./export --max-pages 10 --delay 0.25
+  python deepwiki_exporter.py --url https://deepwiki.com/example/example --out ./export --max-pages 10 --delay 0.25
   ```
 - Skip asset downloads
   ```bash
-  python deepwiki_exporter.py --url https://deepwiki.com/teableio/teable --out ./export --no-assets
+  python deepwiki_exporter.py --url https://deepwiki.com/example/example --out ./export --no-assets
   ```
 
 ## Notes
@@ -93,4 +93,4 @@ Export any public DeepWiki space to clean Markdown with nested folders, preserve
 
 If you find this useful, please give the repo a star! ★
 
-[Star this repo](https://github.com/USERNAME/REPO)
+[Star this repo](https://github.com/rtx9/Deepwiki-Interactive-Exporter.git)
