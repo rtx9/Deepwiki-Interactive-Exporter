@@ -195,7 +195,7 @@ def crawl(root_url: str, out_dir: str, max_pages: int | None = None, delay: floa
 
 def main():
     parser = argparse.ArgumentParser(description="Export a DeepWiki space to Markdown with folder nesting and mermaid diagrams.")
-    parser.add_argument("--url", dest="url", help="DeepWiki space root URL, e.g. https://deepwiki.com/teableio/teable")
+    parser.add_argument("--url", dest="url", help="DeepWiki space root URL, e.g. https://deepwiki.com/example/example")
     parser.add_argument("--out", dest="out_dir", help="Output directory (will be created if missing)")
     parser.add_argument("--max-pages", dest="max_pages", type=int, default=None, help="Maximum number of pages to crawl")
     parser.add_argument("--delay", dest="delay", type=float, default=0.0, help="Delay seconds between requests (politeness)")
@@ -205,7 +205,7 @@ def main():
     print("DeepWiki Markdown Exporter")
     print("Press Enter to accept defaults in brackets.")
 
-    url = args.url or input_nonempty("Enter DeepWiki space URL (e.g., https://deepwiki.com/teableio/teable): ")
+    url = args.url or input_nonempty("Enter DeepWiki space URL (e.g., https://deepwiki.com/example/example): ")
     default_out = os.getcwd()
     out_dir = args.out_dir or (input(f"Output directory [{default_out}]: ").strip() or default_out)
 
